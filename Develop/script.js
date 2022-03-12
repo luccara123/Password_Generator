@@ -12,6 +12,13 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+//Variables for the options
+var empty = "";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var numbers = "0123456789";
+var symbols = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
 // 
 function generatePassword(){
   var passwordCharacters = prompt("Please enter how many characters for the password")
@@ -25,6 +32,7 @@ function generatePassword(){
       var specialCharactersConfirmed = confirm("Add special characters?");
     }
 }
+// Creating functions for each option
 
 
 
