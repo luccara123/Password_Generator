@@ -19,20 +19,46 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
 var symbols = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 
-// 
-function generatePassword(){
-  var passwordCharacters = prompt("Please enter how many characters for the password")
+
+
+var passwordCharacters = prompt("Please enter how many characters for the password")
   
-    if (passwordCharacters < 8 || passwordCharacters > 128  ){ //add if a string
-      alert("Not valid! Enter a number between 8 and 128")
-    } else if(passwordCharacters >= 8 && passwordCharacters <= 128) {
-      var lowerCaseConfirmed = confirm("Add lowercase letters?");
-      var upperCaseConfirmed = confirm("Add uppercase letters?");
-      var numbersConfirmed = confirm("Add numbers?");
-      var specialCharactersConfirmed = confirm("Add special characters?");
-    }
+if (passwordCharacters < 8 || passwordCharacters > 128  ){ //add if a string
+  alert("Not valid! Enter a number between 8 and 128")
+} else if(passwordCharacters >= 8 && passwordCharacters <= 128) {
+  var lowerCaseConfirmed = confirm("Add lowercase letters?");
+  var upperCaseConfirmed = confirm("Add uppercase letters?");
+  var numbersConfirmed = confirm("Add numbers?");
+  var symbolsConfirmed = confirm("Add special characters?");
 }
-// Creating functions for each option
+// 
+function passwordOptions(){
+       var initialPassword = empty;
+       //if lowerCaseConfirmed
+       if (lowerCaseConfirmed === true){ 
+         initialPassword += lowerCase ; // empty = empty + lowercase 
+        } else{
+          "";
+        } 
+        // if upperCase is confirmed
+        if (upperCaseConfirmed === true){ 
+          initialPassword += upperCase ;
+         } else{
+           "";
+         }
+         // if numbers is confirmed
+         if (numbersConfirmed === true){ 
+          initialPassword += numbers;
+         } else{
+           "";
+         }
+         if (symbolsConfirmed === true){ 
+          initialPassword += symbols ;
+         } else{
+           "";
+         }
+}
+
 
 
 
