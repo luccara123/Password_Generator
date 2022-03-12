@@ -3,4 +3,4 @@ Password generator javascript project. The website has a generate password butto
 
 ![image](https://user-images.githubusercontent.com/78193249/158028864-68194494-a07d-4e99-a062-857c25065ec8.png)
 
-website url: 
+website url: https://luccara123.github.io/Password_Generator/
